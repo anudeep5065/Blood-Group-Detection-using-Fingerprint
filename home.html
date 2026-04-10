@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #f7797d, #FBD786, #C6FFDD);
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            margin-top: 40px;
+            color: #343a40;
+            animation: slideDown 1.2s ease;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .btn {
+            border-radius: 10px;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideDown {
+            from {transform: translateY(-30px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: #dc3545;
+            margin-top: 30px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); color: #ff5e5e; }
+            100% { transform: scale(1); }
+        }
+
+        .info-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        @keyframes fadeInUp {
+            from {opacity: 0; transform: translateY(30px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .color-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <div class="logo"><i class="bi bi-droplet-half"></i></div>
+    <h1><strong>Welcome to Blood Group Predictor</strong></h1>
+    <p>Use <span class="text-danger">AI Intelligence</span> to predict your blood group from fingerprints — fast, reliable, and secure.</p>
+
+    <div class="info-card">
+        <h4><i class="bi bi-heart-pulse text-danger"></i> Why Choose Us?</h4>
+        <ul class="list-unstyled mt-3">
+            <li><span class="color-box" style="background:#dc3545;"></span> AI-powered accuracy from fingerprint analysis.</li>
+            <li><span class="color-box" style="background:#0d6efd;"></span> Instant digital blood group report generation.</li>
+            <li><span class="color-box" style="background:#28a745;"></span> Emergency health data linking for hospitals.</li>
+            <li><span class="color-box" style="background:#ffc107;"></span> Smart health profile storage & QR accessibility.</li>
+        </ul>
+    </div>
+
+    <div>
+        <a href="/register" class="btn btn-primary">
+            <i class="bi bi-person-plus"></i> Register
+        </a>
+        <a href="/login" class="btn btn-secondary">
+            <i class="bi bi-box-arrow-in-right"></i> Login
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>💡 Stay Healthy | © 2025 HealthTrack Systems</p>
+    </div>
+</body>
+</html>
