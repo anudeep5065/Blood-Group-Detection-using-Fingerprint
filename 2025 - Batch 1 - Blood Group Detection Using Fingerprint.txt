@@ -1,0 +1,21 @@
+Required Software for the Blood Group Prediction Project
+Below is the complete list of required software and dependencies to run the project locally. Install the core software first, then the Python libraries via pip.                  Core Software
+Python 3.8+: Download from python.org. Install and add to PATH.
+Visual Studio Code (VS Code): Download from code.visualstudio.com. Install the Python extension.
+Python Dependencies (from requirements.txt)
+Install these after setting up Python and VS Code, using pip install -r requirements.txt in the project folder's virtual environment:
+
+Flask==2.3.3 (Web framework for the app).
+Flask-SQLAlchemy==3.0.5 (Database handling with SQLite).
+Flask-Bcrypt==1.0.1 (Password hashing for security).
+Flask-Mail==0.9.1 (Email notifications for emergency requests).
+TensorFlow==2.13.0 (AI/ML library for CNN model).
+Keras==2.13.0 (High-level API for TensorFlow).
+OpenCV-Python==4.8.1.78 (Image processing for fingerprints).
+Pillow==10.0.1 (Image handling and QR code generation).
+qrcode[pil]==7.4.2 (QR code creation for health cards).
+requests==2.31.0 (HTTP requests, e.g., for APIs if needed).
+Chart.js (JavaScript library for charts; included via CDN in HTML templates—no installation required).
+Additional Notes
+Create a virtual environment (python -m venv venv) before installing dependencies to avoid conflicts.
+Dataset: Prepare fingerprint images in dataset/ folders (not software, but required for AI training).
